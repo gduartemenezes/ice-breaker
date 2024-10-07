@@ -1,3 +1,8 @@
+
+import sys
+import os
+sys.path.append(os.path.abspath('/home/gduartemenezes/gdm-software/ai/ice_breaker'))
+
 from dotenv import load_dotenv
 
 from third_parties.linkedin import scrape_linkedin_profile

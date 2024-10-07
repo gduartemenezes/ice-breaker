@@ -1,4 +1,7 @@
+
+import sys
 import os
+sys.path.append(os.path.abspath('/home/gduartemenezes/gdm-software/ai/ice_breaker'))
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -38,4 +41,4 @@ def lookup(name: str) -> str:
     return linkedin_profile_url
 
 if __name__ == "__main__":
-    linkedin_url = lookup(name="Gustavo Duarte Menezes")
+    linkedin_url = lookup(name="Gustavo Duarte Menezes Goiânia")
