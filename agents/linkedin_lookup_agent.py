@@ -10,6 +10,7 @@ from langchain.agents import (
     AgentExecutor
 )
 from langchain import hub
+from tools.tools import get_profile_url_tavily
 
 def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0,model_name="gpt-3.5-turbo")
@@ -21,7 +22,7 @@ def lookup(name: str) -> str:
     tools_for_agent = [
         Tool(
             name="Crawl Google for linkedin profile page",
-            func="?",
+            func=get_profile_url_tavily,
             description="usefull for when you need to get the Linkedin Page URL"
         )
     ]
