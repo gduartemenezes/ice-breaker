@@ -1,7 +1,7 @@
-
 import sys
 import os
-sys.path.append(os.path.abspath('/home/gduartemenezes/gdm-software/ai/ice_breaker'))
+sys.path.append(os.path('/home/gduartemenezes/gdm-software/ai/ice_breaker'))
+
 from dotenv import load_dotenv
 load_dotenv()
 
